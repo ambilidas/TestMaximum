@@ -10,15 +10,20 @@ namespace TestMaximum
     {
         public static int MaxIntNumber(int firstnum,int secondnum,int thirdnum)
         {
-            if(firstnum.CompareTo(secondnum) >  0 && firstnum.CompareTo(thirdnum) > 0)
+            if(firstnum.CompareTo(secondnum) >  0 && firstnum.CompareTo(thirdnum) > 0 || firstnum.CompareTo(secondnum) >= 0 && firstnum.CompareTo(thirdnum) > 0 || firstnum.CompareTo(secondnum) > 0 && firstnum.CompareTo(thirdnum) >= 0)
             {
                 return firstnum;
             }
-            else if(secondnum.CompareTo(firstnum) > 0 && secondnum.CompareTo(thirdnum) > 0)
+            if(secondnum.CompareTo(firstnum) > 0 && secondnum.CompareTo(thirdnum) > 0 || secondnum.CompareTo(firstnum) >= 0 && secondnum.CompareTo(thirdnum) > 0 || secondnum.CompareTo(firstnum) > 0 && secondnum.CompareTo(thirdnum) >= 0)
             {
                 return secondnum;
             }
-             return thirdnum;
+            if(thirdnum.CompareTo(firstnum) > 0 && thirdnum.CompareTo(secondnum) > 0 || thirdnum.CompareTo(firstnum) >= 0 && thirdnum.CompareTo(secondnum) > 0 || thirdnum.CompareTo(firstnum) > 0 && thirdnum.CompareTo(secondnum) >= 0)
+            {
+                return thirdnum;
+            }
+         
+             return firstnum;
         }
     }
 }
