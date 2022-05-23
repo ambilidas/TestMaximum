@@ -23,6 +23,11 @@ namespace TestMaximum
             var sortedValues = Sort(Value);
             return sortedValues[^1];
         }
+        public void printMax()
+        {
+            var maxValue=findMax(this.Value);
+            Console.WriteLine("Maximum value is: "+ maxValue);
+        }
         
     }
 }

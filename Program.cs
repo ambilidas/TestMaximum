@@ -22,7 +22,8 @@ namespace TestMaximum
 
             int[] array = { 10, 20, 30, 40, 50 };
            MaxGenericValue<int> maxGenericValueobj = new MaxGenericValue<int>(array);
-            Console.WriteLine("Maximum value is: "+ maxGenericValueobj.findMax(array)); 
+            // Console.WriteLine("Maximum value is: "+ maxGenericValueobj.findMax(array)); 
+            maxGenericValueobj.printMax();
         }
     }
 }
