@@ -19,6 +19,10 @@ namespace TestMaximum
             Console.WriteLine(MaxValueGen<int>.TestMaximum(20, 10, 5));
             Console.WriteLine(MaxValueGen<float>.TestMaximum(20.5f, 101.23f, 5.5f));
             Console.WriteLine(MaxValueGen<string>.TestMaximum("hello", "helloo", "hellooo"));
+
+            int[] array = { 10, 20, 30, 40, 50 };
+           MaxGenericValue<int> maxGenericValueobj = new MaxGenericValue<int>(array);
+            Console.WriteLine("Maximum value is: "+ maxGenericValueobj.findMax(array)); 
         }
     }
 }
