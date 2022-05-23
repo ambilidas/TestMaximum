@@ -16,6 +16,9 @@ namespace TestMaximum
             Console.WriteLine(StringMax.MaxStringValue("Bridgelabzzz","Bridgelabzz","Bridgelabz"));
             Console.WriteLine(StringMax.MaxStringValue("Bridgelabzz", "Bridgelabzzz", "Bridgelabz"));
             Console.WriteLine(StringMax.MaxStringValue("Bridgelabz", "Bridgelabzz", "Bridgelabzzz"));
+            Console.WriteLine(MaxValueGen<int>.TestMaximum(20, 10, 5));
+            Console.WriteLine(MaxValueGen<float>.TestMaximum(20.5f, 101.23f, 5.5f));
+            Console.WriteLine(MaxValueGen<string>.TestMaximum("hello", "helloo", "hellooo"));
         }
     }
 }
